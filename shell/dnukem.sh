@@ -1,7 +1,7 @@
 #!/bin/sh	
-
-# A nuke to kill them all!!
-# or at least to try
+# - use with caution -
+# a nuke to kill them all..
+# or at least to try.
 dnuke(){
 	docker system prune -a --volumes
 	docker stop $(docker ps -a -q)
